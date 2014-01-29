@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D137AC61897266D001C8B8E /* die1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D137AC51897266D001C8B8E /* die1.mp3 */; };
+		5D137AC818972721001C8B8E /* thrust.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D137AC718972721001C8B8E /* thrust.mp3 */; };
+		5D137ACA18972CDC001C8B8E /* cawcaw.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D137AC918972CDC001C8B8E /* cawcaw.mp3 */; };
+		5D137ACC18972E00001C8B8E /* rocketfish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D137ACB18972E00001C8B8E /* rocketfish.mp3 */; };
+		5D137ACF1897356C001C8B8E /* RocketFishIntro.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D137ACE1897356C001C8B8E /* RocketFishIntro.mp3 */; };
+		5DAD91561894929200677281 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD91551894929200677281 /* Foundation.framework */; };
+		5DAD91581894929200677281 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD91571894929200677281 /* CoreGraphics.framework */; };
+		5DAD915A1894929200677281 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD91591894929200677281 /* UIKit.framework */; };
+		5DAD915C1894929200677281 /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD915B1894929200677281 /* SpriteKit.framework */; };
+		5DAD91621894929200677281 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DAD91601894929200677281 /* InfoPlist.strings */; };
+		5DAD91641894929200677281 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD91631894929200677281 /* main.m */; };
+		5DAD91681894929200677281 /* RFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD91671894929200677281 /* RFAppDelegate.m */; };
+		5DAD916B1894929200677281 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAD91691894929200677281 /* Main_iPhone.storyboard */; };
+		5DAD916E1894929200677281 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAD916C1894929200677281 /* Main_iPad.storyboard */; };
+		5DAD91711894929200677281 /* RFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD91701894929200677281 /* RFViewController.m */; };
+		5DAD91741894929200677281 /* RFGameScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD91731894929200677281 /* RFGameScene.m */; };
+		5DAD91781894929200677281 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DAD91771894929200677281 /* Images.xcassets */; };
+		5DAD917F1894929200677281 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD917E1894929200677281 /* XCTest.framework */; };
+		5DAD91801894929200677281 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD91551894929200677281 /* Foundation.framework */; };
+		5DAD91811894929200677281 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DAD91591894929200677281 /* UIKit.framework */; };
+		5DAD91891894929200677281 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DAD91871894929200677281 /* InfoPlist.strings */; };
+		5DAD918B1894929200677281 /* RocketFishTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD918A1894929200677281 /* RocketFishTests.m */; };
+		5DFD50A6189785130070E663 /* characters.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 5DFD50A5189785130070E663 /* characters.atlas */; };
+		5DFE7573189498C300E3F126 /* goldfish-background-02@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DFE7572189498C300E3F126 /* goldfish-background-02@2x.png */; };
+		5DFE757C1894AB4D00E3F126 /* RocketFire.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5DFE757A1894AB4D00E3F126 /* RocketFire.sks */; };
+		5DFE757D1894AB4D00E3F126 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DFE757B1894AB4D00E3F126 /* spark.png */; };
+		5DFE75D01894DD7D00E3F126 /* RFBaseScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFE75CF1894DD7D00E3F126 /* RFBaseScene.m */; };
+		5DFE75D31894FE2000E3F126 /* SKNode+NodeAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFE75D21894FE2000E3F126 /* SKNode+NodeAdditions.m */; };
+		5DFE75D91895133000E3F126 /* RFHomeScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFE75D81895133000E3F126 /* RFHomeScene.m */; };
+		5DFE75DD1895168C00E3F126 /* home@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DFE75DC1895168C00E3F126 /* home@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5DAD91821894929200677281 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5DAD914A1894929200677281 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5DAD91511894929200677281;
+			remoteInfo = RocketFish;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5D137AC51897266D001C8B8E /* die1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = die1.mp3; sourceTree = "<group>"; };
+		5D137AC718972721001C8B8E /* thrust.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thrust.mp3; sourceTree = "<group>"; };
+		5D137AC918972CDC001C8B8E /* cawcaw.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = cawcaw.mp3; sourceTree = "<group>"; };
+		5D137ACB18972E00001C8B8E /* rocketfish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rocketfish.mp3; sourceTree = "<group>"; };
+		5D137ACD189732DF001C8B8E /* RFInto.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = RFInto.m4a; sourceTree = "<group>"; };
+		5D137ACE1897356C001C8B8E /* RocketFishIntro.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = RocketFishIntro.mp3; sourceTree = "<group>"; };
+		5DAD91521894929200677281 /* RocketFish.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RocketFish.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DAD91551894929200677281 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5DAD91571894929200677281 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5DAD91591894929200677281 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5DAD915B1894929200677281 /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		5DAD915F1894929200677281 /* RocketFish-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RocketFish-Info.plist"; sourceTree = "<group>"; };
+		5DAD91611894929200677281 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5DAD91631894929200677281 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5DAD91651894929200677281 /* RocketFish-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RocketFish-Prefix.pch"; sourceTree = "<group>"; };
+		5DAD91661894929200677281 /* RFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFAppDelegate.h; sourceTree = "<group>"; };
+		5DAD91671894929200677281 /* RFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFAppDelegate.m; sourceTree = "<group>"; };
+		5DAD916A1894929200677281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		5DAD916D1894929200677281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		5DAD916F1894929200677281 /* RFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFViewController.h; sourceTree = "<group>"; };
+		5DAD91701894929200677281 /* RFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFViewController.m; sourceTree = "<group>"; };
+		5DAD91721894929200677281 /* RFGameScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RFGameScene.h; sourceTree = "<group>"; };
+		5DAD91731894929200677281 /* RFGameScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RFGameScene.m; sourceTree = "<group>"; };
+		5DAD91771894929200677281 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5DAD917D1894929200677281 /* RocketFishTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RocketFishTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DAD917E1894929200677281 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5DAD91861894929200677281 /* RocketFishTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RocketFishTests-Info.plist"; sourceTree = "<group>"; };
+		5DAD91881894929200677281 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5DAD918A1894929200677281 /* RocketFishTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RocketFishTests.m; sourceTree = "<group>"; };
+		5DFD50A5189785130070E663 /* characters.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = characters.atlas; sourceTree = "<group>"; };
+		5DFE7572189498C300E3F126 /* goldfish-background-02@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "goldfish-background-02@2x.png"; sourceTree = "<group>"; };
+		5DFE757A1894AB4D00E3F126 /* RocketFire.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RocketFire.sks; sourceTree = "<group>"; };
+		5DFE757B1894AB4D00E3F126 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		5DFE75CE1894DD7D00E3F126 /* RFBaseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFBaseScene.h; sourceTree = "<group>"; };
+		5DFE75CF1894DD7D00E3F126 /* RFBaseScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFBaseScene.m; sourceTree = "<group>"; };
+		5DFE75D11894FE2000E3F126 /* SKNode+NodeAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SKNode+NodeAdditions.h"; sourceTree = "<group>"; };
+		5DFE75D21894FE2000E3F126 /* SKNode+NodeAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKNode+NodeAdditions.m"; sourceTree = "<group>"; };
+		5DFE75D71895133000E3F126 /* RFHomeScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFHomeScene.h; sourceTree = "<group>"; };
+		5DFE75D81895133000E3F126 /* RFHomeScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFHomeScene.m; sourceTree = "<group>"; };
+		5DFE75DC1895168C00E3F126 /* home@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5DAD914F1894929200677281 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAD91581894929200677281 /* CoreGraphics.framework in Frameworks */,
+				5DAD915A1894929200677281 /* UIKit.framework in Frameworks */,
+				5DAD915C1894929200677281 /* SpriteKit.framework in Frameworks */,
+				5DAD91561894929200677281 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DAD917A1894929200677281 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAD917F1894929200677281 /* XCTest.framework in Frameworks */,
+				5DAD91811894929200677281 /* UIKit.framework in Frameworks */,
+				5DAD91801894929200677281 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D137AC418972664001C8B8E /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				5D137ACE1897356C001C8B8E /* RocketFishIntro.mp3 */,
+				5D137ACD189732DF001C8B8E /* RFInto.m4a */,
+				5D137AC718972721001C8B8E /* thrust.mp3 */,
+				5D137ACB18972E00001C8B8E /* rocketfish.mp3 */,
+				5D137AC918972CDC001C8B8E /* cawcaw.mp3 */,
+				5D137AC51897266D001C8B8E /* die1.mp3 */,
+			);
+			name = Audio;
+			sourceTree = "<group>";
+		};
+		5D2F9F0718959A980051472A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5D137AC418972664001C8B8E /* Audio */,
+				5D2F9F0818959AC80051472A /* Backgrounds */,
+				5DFE75D6189512D900E3F126 /* Emitters */,
+				5DFD50A5189785130070E663 /* characters.atlas */,
+				5DAD91771894929200677281 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		5D2F9F0818959AC80051472A /* Backgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				5DFE7572189498C300E3F126 /* goldfish-background-02@2x.png */,
+				5DFE75DC1895168C00E3F126 /* home@2x.png */,
+			);
+			name = Backgrounds;
+			sourceTree = "<group>";
+		};
+		5DAD91491894929200677281 = {
+			isa = PBXGroup;
+			children = (
+				5DAD915D1894929200677281 /* RocketFish */,
+				5DAD91841894929200677281 /* RocketFishTests */,
+				5DAD91541894929200677281 /* Frameworks */,
+				5DAD91531894929200677281 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5DAD91531894929200677281 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD91521894929200677281 /* RocketFish.app */,
+				5DAD917D1894929200677281 /* RocketFishTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5DAD91541894929200677281 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD91551894929200677281 /* Foundation.framework */,
+				5DAD91571894929200677281 /* CoreGraphics.framework */,
+				5DAD91591894929200677281 /* UIKit.framework */,
+				5DAD915B1894929200677281 /* SpriteKit.framework */,
+				5DAD917E1894929200677281 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5DAD915D1894929200677281 /* RocketFish */ = {
+			isa = PBXGroup;
+			children = (
+				5DFE75D41895129E00E3F126 /* Scenes */,
+				5DAD91661894929200677281 /* RFAppDelegate.h */,
+				5DAD91671894929200677281 /* RFAppDelegate.m */,
+				5DAD91691894929200677281 /* Main_iPhone.storyboard */,
+				5DAD916C1894929200677281 /* Main_iPad.storyboard */,
+				5DAD916F1894929200677281 /* RFViewController.h */,
+				5DAD91701894929200677281 /* RFViewController.m */,
+				5DFE75D11894FE2000E3F126 /* SKNode+NodeAdditions.h */,
+				5DFE75D21894FE2000E3F126 /* SKNode+NodeAdditions.m */,
+				5DFE75CE1894DD7D00E3F126 /* RFBaseScene.h */,
+				5DFE75CF1894DD7D00E3F126 /* RFBaseScene.m */,
+				5D2F9F0718959A980051472A /* Resources */,
+				5DAD915E1894929200677281 /* Supporting Files */,
+			);
+			path = RocketFish;
+			sourceTree = "<group>";
+		};
+		5DAD915E1894929200677281 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD915F1894929200677281 /* RocketFish-Info.plist */,
+				5DAD91601894929200677281 /* InfoPlist.strings */,
+				5DAD91631894929200677281 /* main.m */,
+				5DAD91651894929200677281 /* RocketFish-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DAD91841894929200677281 /* RocketFishTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD918A1894929200677281 /* RocketFishTests.m */,
+				5DAD91851894929200677281 /* Supporting Files */,
+			);
+			path = RocketFishTests;
+			sourceTree = "<group>";
+		};
+		5DAD91851894929200677281 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD91861894929200677281 /* RocketFishTests-Info.plist */,
+				5DAD91871894929200677281 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5DFE75D41895129E00E3F126 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5DAD91721894929200677281 /* RFGameScene.h */,
+				5DAD91731894929200677281 /* RFGameScene.m */,
+				5DFE75D71895133000E3F126 /* RFHomeScene.h */,
+				5DFE75D81895133000E3F126 /* RFHomeScene.m */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		5DFE75D6189512D900E3F126 /* Emitters */ = {
+			isa = PBXGroup;
+			children = (
+				5DFE757A1894AB4D00E3F126 /* RocketFire.sks */,
+				5DFE757B1894AB4D00E3F126 /* spark.png */,
+			);
+			name = Emitters;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5DAD91511894929200677281 /* RocketFish */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DAD918E1894929200677281 /* Build configuration list for PBXNativeTarget "RocketFish" */;
+			buildPhases = (
+				5DAD914E1894929200677281 /* Sources */,
+				5DAD914F1894929200677281 /* Frameworks */,
+				5DAD91501894929200677281 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RocketFish;
+			productName = RocketFish;
+			productReference = 5DAD91521894929200677281 /* RocketFish.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5DAD917C1894929200677281 /* RocketFishTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5DAD91911894929200677281 /* Build configuration list for PBXNativeTarget "RocketFishTests" */;
+			buildPhases = (
+				5DAD91791894929200677281 /* Sources */,
+				5DAD917A1894929200677281 /* Frameworks */,
+				5DAD917B1894929200677281 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5DAD91831894929200677281 /* PBXTargetDependency */,
+			);
+			name = RocketFishTests;
+			productName = RocketFishTests;
+			productReference = 5DAD917D1894929200677281 /* RocketFishTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5DAD914A1894929200677281 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RF;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Tate Jennings";
+				TargetAttributes = {
+					5DAD91511894929200677281 = {
+						DevelopmentTeam = B2UN432VB9;
+					};
+					5DAD917C1894929200677281 = {
+						TestTargetID = 5DAD91511894929200677281;
+					};
+				};
+			};
+			buildConfigurationList = 5DAD914D1894929200677281 /* Build configuration list for PBXProject "RocketFish" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5DAD91491894929200677281;
+			productRefGroup = 5DAD91531894929200677281 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5DAD91511894929200677281 /* RocketFish */,
+				5DAD917C1894929200677281 /* RocketFishTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5DAD91501894929200677281 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DFE757D1894AB4D00E3F126 /* spark.png in Resources */,
+				5D137AC61897266D001C8B8E /* die1.mp3 in Resources */,
+				5DAD91781894929200677281 /* Images.xcassets in Resources */,
+				5D137ACF1897356C001C8B8E /* RocketFishIntro.mp3 in Resources */,
+				5DAD916E1894929200677281 /* Main_iPad.storyboard in Resources */,
+				5DFE757C1894AB4D00E3F126 /* RocketFire.sks in Resources */,
+				5D137AC818972721001C8B8E /* thrust.mp3 in Resources */,
+				5D137ACA18972CDC001C8B8E /* cawcaw.mp3 in Resources */,
+				5DFE75DD1895168C00E3F126 /* home@2x.png in Resources */,
+				5DAD916B1894929200677281 /* Main_iPhone.storyboard in Resources */,
+				5DFE7573189498C300E3F126 /* goldfish-background-02@2x.png in Resources */,
+				5D137ACC18972E00001C8B8E /* rocketfish.mp3 in Resources */,
+				5DFD50A6189785130070E663 /* characters.atlas in Resources */,
+				5DAD91621894929200677281 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DAD917B1894929200677281 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAD91891894929200677281 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5DAD914E1894929200677281 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAD91681894929200677281 /* RFAppDelegate.m in Sources */,
+				5DAD91641894929200677281 /* main.m in Sources */,
+				5DAD91741894929200677281 /* RFGameScene.m in Sources */,
+				5DFE75D01894DD7D00E3F126 /* RFBaseScene.m in Sources */,
+				5DFE75D91895133000E3F126 /* RFHomeScene.m in Sources */,
+				5DAD91711894929200677281 /* RFViewController.m in Sources */,
+				5DFE75D31894FE2000E3F126 /* SKNode+NodeAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DAD91791894929200677281 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DAD918B1894929200677281 /* RocketFishTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5DAD91831894929200677281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5DAD91511894929200677281 /* RocketFish */;
+			targetProxy = 5DAD91821894929200677281 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5DAD91601894929200677281 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DAD91611894929200677281 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5DAD91691894929200677281 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DAD916A1894929200677281 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		5DAD916C1894929200677281 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DAD916D1894929200677281 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		5DAD91871894929200677281 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5DAD91881894929200677281 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5DAD918C1894929200677281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5DAD918D1894929200677281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5DAD918F1894929200677281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RocketFish/RocketFish-Prefix.pch";
+				INFOPLIST_FILE = "RocketFish/RocketFish-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5DAD91901894929200677281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RocketFish/RocketFish-Prefix.pch";
+				INFOPLIST_FILE = "RocketFish/RocketFish-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5DAD91921894929200677281 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RocketFish.app/RocketFish";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RocketFish/RocketFish-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RocketFishTests/RocketFishTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		5DAD91931894929200677281 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RocketFish.app/RocketFish";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RocketFish/RocketFish-Prefix.pch";
+				INFOPLIST_FILE = "RocketFishTests/RocketFishTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5DAD914D1894929200677281 /* Build configuration list for PBXProject "RocketFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAD918C1894929200677281 /* Debug */,
+				5DAD918D1894929200677281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DAD918E1894929200677281 /* Build configuration list for PBXNativeTarget "RocketFish" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAD918F1894929200677281 /* Debug */,
+				5DAD91901894929200677281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5DAD91911894929200677281 /* Build configuration list for PBXNativeTarget "RocketFishTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5DAD91921894929200677281 /* Debug */,
+				5DAD91931894929200677281 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5DAD914A1894929200677281 /* Project object */;
+}
