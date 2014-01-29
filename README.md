@@ -1,7 +1,7 @@
 Rocketfish
 ==========
 
-This is an app that was built for a live demo during the mos recent meetup of the Las Vegas iOS Developers.
+This is an app that was built for a live demo during the most recent meetup of the Las Vegas iOS Developers.
 
 Note: Graphics are built for iPhone 5.
 
