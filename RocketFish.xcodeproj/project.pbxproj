@@ -299,9 +299,6 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Tate Jennings";
 				TargetAttributes = {
-					5DAD91511894929200677281 = {
-						DevelopmentTeam = B2UN432VB9;
-					};
 					5DAD917C1894929200677281 = {
 						TestTargetID = 5DAD91511894929200677281;
 					};
